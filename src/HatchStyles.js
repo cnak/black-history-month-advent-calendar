@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import hatchBackdrop from "./img/hatch_backdrop.jpg";
+import styled from 'styled-components';
+import hatchBackdrop from './img/hatch_backdrop.jpg';
 
-export const StyledHatch = styled.div`
+const StyledHatch = styled.div`
   padding-top: 100%; /* padding-top is based on the width - believe it or not!!! */
   position: relative;
   cursor: pointer;
 
   .front {
-    background: center / cover url(${props => props.background});
+    background: center / cover url(${(props) => props.background});
     position: absolute;
     top: 0;
     left: 0;
@@ -68,3 +68,5 @@ export const StyledHatch = styled.div`
     box-sizing: border-box;
   }
 `;
+
+export default StyledHatch;
