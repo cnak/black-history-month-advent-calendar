@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import StyledApp from './AppStyles';
 import { createCalendar } from './helpers';
 import Hatch from './components/Hatch';
-
+import bhmBackground from './img/bhm.png';
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: #73a282;
@@ -35,17 +35,23 @@ function App() {
     hatches.length && localStorage.setItem('calendar', JSON.stringify(hatches));
   }, [hatches]);
 
+  const shouldOpen = (hatch) => {        
+      if (hatch.isOpen === false) { 
+        return true;
+      }
+  };
+
   const handleFlipHatch = (id) => {
     // eslint-disable-next-line arrow-body-style
     const updatedHatches = hatches.map((hatch) => {
-      return (hatch.id === id ? { ...hatch, open: !hatch.open } : hatch);
+      return hatch.id === id ? { ...hatch, open: shouldOpen(hatch) } : hatch;
     });
     setHatches(updatedHatches);
   };
 
   return (
     <>
-      <StyledLogo src={require('./img/bhm.png')} alt="logo" />
+      <StyledLogo src={bhmBackground} alt="logo" />
       <GlobalStyle />
       <StyledApp>
         {hatches.map((hatch) => (
