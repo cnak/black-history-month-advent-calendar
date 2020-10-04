@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Confetti from 'react-dom-confetti';
-import StyledHatch  from './HatchStyles';
+import StyledHatch from './HatchStyles';
 import confettiConfig from './confetti';
 
-import defaultBackground from './img/background.jpg';
+import defaultBackground from '../img/background.jpg';
 
 const Hatch = ({
   hatchData: {
-    id, nr, text, img, open,
+    id, nr, text, _img, open,
   }, handleClick,
 }) => {
   const isOpen = open;

@@ -2,6 +2,7 @@ export const hatchArray = [
   {
     id: 'hatch-1',
     nr: 1,
+    name: 'Cedric',
     img: './img/1.jpg',
     text: 'orem ipsum dolor sit amet, consectetur adipiscing elit, sed do e',
     open: false,

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import hatchBackdrop from './img/hatch_backdrop.jpg';
+import hatchBackdrop from '../img/hatch_backdrop.jpg';
 
 const StyledHatch = styled.div`
   padding-top: 100%; /* padding-top is based on the width - believe it or not!!! */

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import StyledApp from './AppStyles';
 import { createCalendar } from './helpers';
-import Hatch from './Hatch';
+import Hatch from './components/Hatch';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -36,6 +36,7 @@ function App() {
   }, [hatches]);
 
   const handleFlipHatch = (id) => {
+    // eslint-disable-next-line arrow-body-style
     const updatedHatches = hatches.map((hatch) => {
       return (hatch.id === id ? { ...hatch, open: !hatch.open } : hatch);
     });
