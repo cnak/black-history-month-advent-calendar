@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import StyledApp from './AppStyles';
 import { createCalendar } from './helpers';
-import Hatch from './components/Hatch';
+// import Hatch from './components/Hatch';
 import bhmBackground from './img/bhm.png';
+import Spinner from './components/Spinner'
+
+const Hatch = lazy(() => import ('./components/Hatch'));
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: #73a282;
@@ -56,6 +59,7 @@ function App() {
       <StyledLogo src={bhmBackground} alt="logo" />
       <GlobalStyle />
       <StyledApp>
+          <Suspense fallback={<Spinner />}>
         {hatches.map((hatch) => (
           <Hatch
             key={hatch.id}
@@ -63,6 +67,7 @@ function App() {
             handleClick={handleFlipHatch}
           />
         ))}
+          </Suspense>
       </StyledApp>
     </>
   );
