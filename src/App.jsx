@@ -36,15 +36,17 @@ function App() {
   }, [hatches]);
 
   const shouldOpen = (hatch) => {        
-      if (hatch.isOpen === false) { 
+      const canOpen = new Date().getTime() >= new Date(hatch.adventDate).getTime();
+      if ((hatch.isOpen === false && canOpen) || (hatch.isOpen && canOpen)) { 
         return true;
       }
+      return false;
   };
 
   const handleFlipHatch = (id) => {
     // eslint-disable-next-line arrow-body-style
     const updatedHatches = hatches.map((hatch) => {
-      return hatch.id === id ? { ...hatch, open: shouldOpen(hatch) } : hatch;
+      return hatch.id === id ? { ...hatch, isOpen: shouldOpen(hatch) } : hatch;
     });
     setHatches(updatedHatches);
   };

@@ -8,11 +8,11 @@ import defaultBackground from '../img/background.jpg';
 
 const Hatch = ({
   hatchData: {
-    id, nr, text, img, open, adventDate,
-  }, handleClick,
+    id, nr, text, img, isOpen, adventDate,
+  },
+  handleClick,
 }) => {
-  const isOpen = open;
-  const canOpen = (new Date().getTime() >= new Date(adventDate).getTime());
+  const canOpen = new Date().getTime() >= new Date(adventDate).getTime();
 
   return (
     <StyledHatch
@@ -20,11 +20,11 @@ const Hatch = ({
       hatchBackdrop={img}
       onClick={() => handleClick(id)}
     >
-      <div className={open ? 'front open' : 'front'}>
+      <div className={isOpen ? 'front open' : 'front'}>
         <p>{nr}</p>
       </div>
       {canOpen && (
-        <div className={open ? 'back open' : 'back'}>
+        <div className={isOpen ? 'back open' : 'back'}>
           <Confetti active={isOpen} config={confettiConfig} />
           <p>{text}</p>
         </div>
