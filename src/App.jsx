@@ -2,7 +2,6 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import StyledApp from './AppStyles';
 import { createCalendar } from './helpers';
-// import Hatch from './components/Hatch';
 import bhmBackground from './img/bhm.png';
 import Spinner from './components/Spinner'
 

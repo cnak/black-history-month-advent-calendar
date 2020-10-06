@@ -1,16 +1,43 @@
 /* eslint-disable */
 /* eslint-disable no-console */
-// This optional code is used to register a service worker.
-// register() is not called by default.
+const filesToCache = [
+  "/",
+  "style.css",
+  "img/*",
+  "index.html",
+];
 
-// This lets the app load faster on subsequent visits in production, and gives
-// it offline capabilities. However, it also means that developers (and users)
-// will only see deployed updates on subsequent visits to a page, after all the
-// existing tabs open on the page have been closed, since previously cached
-// resources are updated in the background.
+const staticCacheName = "black-history-advent";
 
-// To learn more about the benefits of this model and instructions on how to
-// opt-in, read https://bit.ly/CRA-PWA
+self.addEventListener("install", (event) => {
+  console.log("Attempting to install service worker and cache static assets");
+  event.waitUntil(
+    caches.open(staticCacheName).then((cache) => {
+      return cache.addAll(filesToCache);
+    })
+  );
+});
+
+self.addEventListener("fetch", (event) => {
+  console.log("Fetch event for ", event.request.url);
+  event.respondWith(
+    caches
+      .match(event.request)
+      .then((response) => {
+        if (response) {
+          console.log("Found ", event.request.url, " in cache");
+          return response;
+        }
+        console.log("Network request for ", event.request.url);
+        return fetch(event.request);
+
+        // TODO 4 - Add fetched files to the cache
+      })
+      .catch((error) => {
+        // TODO 6 - Respond with custom offline page
+      })
+  );
+});
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost'
@@ -49,7 +76,6 @@ export function register(config) {
           );
         });
       } else {
-        // Is not localhost. Just register service worker
         registerValidSW(swUrl, config);
       }
     });

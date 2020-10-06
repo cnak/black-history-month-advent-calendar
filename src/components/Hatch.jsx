@@ -1,20 +1,23 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { lazy, Suspense } from "react";
 import Confetti from 'react-dom-confetti';
-import StyledHatch from './HatchStyles';
 import confettiConfig from './confetti';
 
 import defaultBackground from '../img/background.jpg';
+import Popup from './Popup';
+import Spinner from "./Spinner";
+const StyledHatch = lazy(() => import("./HatchStyles"));
 
 const Hatch = ({
   hatchData: {
-    id, nr, text, img, isOpen, adventDate,
+    id, nr, text, img, isOpen, adventDate, name,
   },
   handleClick,
 }) => {
   const canOpen = new Date().getTime() >= new Date(adventDate).getTime();
 
   return (
+         <Suspense fallback={<Spinner />}>
     <StyledHatch
       background={defaultBackground}
       hatchBackdrop={img}
@@ -26,10 +29,11 @@ const Hatch = ({
       {canOpen && (
         <div className={isOpen ? 'back open' : 'back'}>
           <Confetti active={isOpen} config={confettiConfig} />
-          <p>{text}</p>
+          <Popup fact={text} name={name}/>
         </div>
       )}
     </StyledHatch>
+         </Suspense>
   );
 };
 
