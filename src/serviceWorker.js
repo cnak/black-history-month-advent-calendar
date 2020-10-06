@@ -3,7 +3,7 @@
 const filesToCache = [
   "/",
   "style.css",
-  "img/*",
+  "img/",
   "index.html",
 ];
 
