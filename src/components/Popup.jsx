@@ -6,7 +6,7 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-export default function Popup({fact, name}) {
+export default function Popup({fact, name, imageUrl}) {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal() {
@@ -24,9 +24,12 @@ export default function Popup({fact, name}) {
         overlayClassName="myoverlay"
         closeTimeoutMS={500}
       >
-        <div className="modal-fact">
-            {name}
-            {fact}
+      <div className="modal-image">
+        <img src={imageUrl} alt={name}/>
+      </div>
+        <div className="modal-info">
+            <div className="modal-name">{name}</div>
+            <div className="modal-fact">{fact}</div>
         </div>
         <button onClick={toggleModal}>Go Back</button>
       </Modal>

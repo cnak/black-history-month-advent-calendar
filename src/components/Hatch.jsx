@@ -17,23 +17,23 @@ const Hatch = ({
   const canOpen = new Date().getTime() >= new Date(adventDate).getTime();
 
   return (
-         <Suspense fallback={<Spinner />}>
-    <StyledHatch
-      background={defaultBackground}
-      hatchBackdrop={img}
-      onClick={() => handleClick(id)}
-    >
-      <div className={isOpen ? 'front open' : 'front'}>
-        <p>{nr}</p>
-      </div>
-      {canOpen && (
-        <div className={isOpen ? 'back open' : 'back'}>
-          <Confetti active={isOpen} config={confettiConfig} />
-          <Popup fact={text} name={name}/>
+    <Suspense fallback={<Spinner />}>
+      <StyledHatch
+        background={defaultBackground}
+        hatchBackdrop={img}
+        onClick={() => handleClick(id)}
+      >
+        <div className={isOpen ? "front open" : "front"}>
+          <p>{nr}</p>
         </div>
-      )}
-    </StyledHatch>
-         </Suspense>
+        {canOpen && (
+          <div className={isOpen ? "back open" : "back"}>
+            <Confetti active={isOpen} config={confettiConfig} />
+            <Popup fact={text} name={name} imageUrl={img} />
+          </div>
+        )}
+      </StyledHatch>
+    </Suspense>
   );
 };
 
