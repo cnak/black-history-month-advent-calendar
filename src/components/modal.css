@@ -44,8 +44,7 @@
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1000;
 }
-
-.modal-button {
+.learn-more-button {
   bottom:0;
   background: white;
   font-size: 16px;
@@ -57,6 +56,34 @@
   transition: 0.5s all ease-out;
   width: 63%;
   position: fixed;
+}
+
+.modal-button {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  border: solid 2px white;
+  border-radius: 19px;
+}
+.modal-button:hover {
+  opacity: 1;
+}
+.modal-button:before, .modal-button:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.modal-button:before {
+  transform: rotate(45deg);
+}
+.modal-button:after {
+  transform: rotate(-45deg);
 }
 
 .ReactModal__Overlay {

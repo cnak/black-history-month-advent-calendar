@@ -3,6 +3,7 @@ import React, { lazy, Suspense } from "react";
 import Confetti from 'react-dom-confetti';
 import confettiConfig from './confetti';
 
+
 import defaultBackground from '../img/background.jpg';
 import Popup from './Popup';
 import Spinner from "./Spinner";
