@@ -8,7 +8,7 @@ import Spinner from './components/Spinner'
 const Hatch = lazy(() => import ('./components/Hatch'));
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #73a282;
+    background-color: #1e1e1d;
     margin: 0;
   }
 `;
@@ -58,7 +58,7 @@ function App() {
       <StyledLogo src={bhmBackground} alt="logo" />
       <GlobalStyle />
       <StyledApp>
-          <Suspense fallback={<Spinner />}>
+        <Suspense fallback={<Spinner />}>
         {hatches.map((hatch) => (
           <Hatch
             key={hatch.id}

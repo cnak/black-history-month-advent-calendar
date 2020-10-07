@@ -11,12 +11,13 @@ const StyledHatch = styled.div`
     top: 0;
     left: 0;
     z-index: 2;
+    backface-visibility: hidden;
 
     p {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: "Times";
+      font-family: 'Times';
       color: #fff;
       padding: 20px;
       width: 50%;
@@ -31,7 +32,6 @@ const StyledHatch = styled.div`
       transform: rotateY(180deg);
     }
   }
-
   .back {
     position: absolute;
     background: center / cover url(${(props) => props.hatchBackdrop});
@@ -39,18 +39,13 @@ const StyledHatch = styled.div`
     left: 0px;
     z-index: 1;
     transform: rotateY(180deg);
-
-    p {
-      font-family: "Times";
-      color: #fff;
-      padding: 10px;
-      font-size: 1.4rem;
-      text-align: center;
-    }
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 
     &.open {
       z-index: 2;
       transform: rotateY(0deg);
+      backface-visibility: hidden;
     }
   }
 
