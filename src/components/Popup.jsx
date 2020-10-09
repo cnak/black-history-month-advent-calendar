@@ -1,4 +1,5 @@
-import React, { forwardRef, useState, useImperativeHandle } from 'react';
+import React, { forwardRef, useState, useImperativeHandle, Suspense } from 'react';
+import Spinner from '../components/Spinner';
 import "./modal.css";
 import Modal from "react-modal";
 
@@ -34,7 +35,7 @@ useImperativeHandle(
       >
         <a className={"modal-button"} onClick={toggleModal} />
         <div className="modal-image" style={{borderBottom: `solid 24px ${frontColor}`}}>
-          <img src={imageUrl} alt={name} />
+               <img src={imageUrl} alt={name} />
         </div>
         <div className="modal-info">
           <div className="modal-name">{name}</div>
