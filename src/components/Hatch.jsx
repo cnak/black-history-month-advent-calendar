@@ -3,15 +3,13 @@ import React, { lazy, Suspense } from "react";
 import Confetti from 'react-dom-confetti';
 import confettiConfig from './confetti';
 
-
-import defaultBackground from '../img/background.jpg';
 import Popup from './Popup';
 import Spinner from "./Spinner";
 const StyledHatch = lazy(() => import("./HatchStyles"));
 
 const Hatch = ({
   hatchData: {
-    id, nr, text, img, isOpen, adventDate, name,
+    id, nr, text, img, isOpen, adventDate, name, frontColor, hasBeenOpen
   },
   handleClick,
 }) => {
@@ -20,7 +18,7 @@ const Hatch = ({
   return (
     <Suspense fallback={<Spinner />}>
       <StyledHatch
-        background={defaultBackground}
+        frontColor={frontColor}
         hatchBackdrop={img}
         onClick={() => handleClick(id)}
       >

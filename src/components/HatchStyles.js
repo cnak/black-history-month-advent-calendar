@@ -6,7 +6,7 @@ const StyledHatch = styled.div`
   cursor: pointer;
 
   .front {
-    background: center / cover url(${(props) => props.background});
+    background: ${(props) => props.frontColor};
     position: absolute;
     top: 0;
     left: 0;
@@ -18,14 +18,12 @@ const StyledHatch = styled.div`
       align-items: center;
       justify-content: center;
       font-family: 'Times';
-      color: #fff;
+      color: black;
       padding: 20px;
       width: 50%;
       height: 50%;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.7);
       font-weight: 700;
-      font-size: 4rem;
+      font-size: 2rem;
     }
 
     &.open {
@@ -57,8 +55,7 @@ const StyledHatch = styled.div`
     height: 100%;
     transition: all 0.5s;
     transform-style: preserve-3d;
-    border-radius: 20px;
-    border: 1px solid #fff;
+    border-radius: 4px;
     box-sizing: border-box;
   }
 `;

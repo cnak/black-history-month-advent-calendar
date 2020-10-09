@@ -8,7 +8,7 @@ import Spinner from './components/Spinner'
 const Hatch = lazy(() => import ('./components/Hatch'));
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #1e1e1d;
+    background-color: #1E1E1;
     margin: 0;
   }
 `;

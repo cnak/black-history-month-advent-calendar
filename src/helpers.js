@@ -13,10 +13,12 @@ export const hatchArray = [
     nr: 1,
     name: 'Daniel Hale Williams',
     img: './img/1.jpg',
-    text: 'Founded the first black-owned hospital in America, and performed the worlds first successful heart surgery, in 1893',
+    text:
+      'Founded the first black-owned hospital in America, and performed the worlds first successful heart surgery, in 1893',
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 1),
+    frontColor: '#E55F13'
   },
   {
     id: 'hatch-2',
@@ -27,6 +29,7 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 2),
+    frontColor: '#647D1C'
   },
   {
     id: 'hatch-3',
@@ -37,6 +40,7 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 3),
+    frontColor: '#E8AA24'
   },
   {
     id: 'hatch-4',
@@ -47,6 +51,7 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 4),
+    frontColor: '#E55F13'
   },
   {
     id: 'hatch-5',
@@ -57,6 +62,7 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 5),
+    frontColor: '#647D1C'
   },
   {
     id: 'hatch-6',
@@ -67,6 +73,7 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 6),
+    frontColor: '#E8AA24'
   },
   {
     id: 'hatch-7',
@@ -77,6 +84,7 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 7),
+    frontColor: '#E55F13'
   },
   {
     id: 'hatch-8',
@@ -87,6 +95,7 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 8),
+    frontColor: '#647D1C'
   },
   {
     id: 'hatch-9',
@@ -97,7 +106,8 @@ export const hatchArray = [
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 9),
-  },
+    frontColor: '#E8AA24'
+  }
 ];
 
 export const createCalendar = () => hatchArray;
