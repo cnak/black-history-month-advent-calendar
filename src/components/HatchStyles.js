@@ -17,7 +17,7 @@ const StyledHatch = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Times';
+      font-family: 'Pilat Narrow';
       color: black;
       padding: 20px;
       width: 50%;

@@ -15,27 +15,12 @@
 }
 
 .modal-image {
+  height: 50vh;
   width: 100%;
   background-image: linear-gradient(to right, #ebebeb calc(50% - 100px), #c5c5c5 50%, #ebebeb calc(50% + 100px));
   background-size:0;
   position:relative;
   overflow:hidden;
-}
-.modal-image::before {
-  content:"";
-  position:absolute;
-  opacity: 20%;
-  top:0;
-  left:0;
-  width:calc(200% + 200px);
-  bottom:0;
-  background-image:inherit;
-  animation:move 3s linear infinite reverse; 
-}
-@keyframes move{
-  to {
-    transform:translateX(calc(-50% - 100px));
-  }
 }
 
 .modal-image img {
@@ -47,11 +32,13 @@
 }
 
 .modal-name {
+    font-family: 'BEYNO';
     font-size: 2em;
     text-transform: uppercase;
     margin-bottom: .5em;
 }
 .modal-fact {
+    font-family: 'roboto';
     font-size: 1.2em;
 }
 
@@ -84,8 +71,6 @@
   top: 32px;
   width: 32px;
   height: 32px;
-  opacity: 0.3;
-  border: solid 2px white;
   border-radius: 19px;
   z-index: 1000;
 }

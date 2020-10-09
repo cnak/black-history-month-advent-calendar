@@ -2,7 +2,7 @@ const confettiConfig = {
   angle: 90,
   spread: 50,
   startVelocity: 40,
-  elementCount: 170,
+  elementCount: 110,
   dragFriction: 0.12,
   duration: 2000,
   stagger: 3,

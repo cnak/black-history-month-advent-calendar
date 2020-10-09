@@ -11,18 +11,19 @@ const rotate360 = keyframes`
 `;
 
 const Spinner = styled.div`
-  animation: ${rotate360} 1s linear infinite;
+  animation: ${rotate360} 2s linear infinite;
   transform: translateZ(0);
 
-  border-top: 2px solid grey;
-  border-right: 2px solid grey;
-  border-bottom: 2px solid grey;
-  border-left: 4px solid black;
+  border-top: 2px solid #e55f13;
+  border-right: 2px solid #647d1c;
+  border-bottom: 2px solid #e8aa24;
+  border-left: 4px solid #e55f13;
 
   background: transparent;
 
-  width: 20vh;
-  height: 20vh;
+  width: 12vh;
+  height: 12vh;
+  margin: 0 auto;
   border-radius: 50%;
 `;
 
