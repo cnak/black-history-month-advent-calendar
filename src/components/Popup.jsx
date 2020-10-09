@@ -4,7 +4,7 @@ import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-export default function Popup({fact, name, imageUrl}) {
+export default function Popup({fact, name, imageUrl, frontColor}) {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal() {
@@ -25,7 +25,7 @@ export default function Popup({fact, name, imageUrl}) {
         closeTimeoutMS={500}
       >
         <a className={"modal-button"} onClick={toggleModal} />
-        <div className="modal-image">
+        <div className="modal-image" style={{borderBottom: `solid 24px ${frontColor}`}}>
           <img src={imageUrl} alt={name} />
         </div>
         <div className="modal-info">

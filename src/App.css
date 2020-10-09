@@ -9,3 +9,9 @@
   width: 50%;
 }
 
+.logo {
+    margin: 3em;
+}
+.logo img {
+    min-width: 10em;
+}

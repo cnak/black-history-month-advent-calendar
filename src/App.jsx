@@ -1,8 +1,9 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import StyledApp from './AppStyles';
+import './App.css'
 import { createCalendar } from './helpers';
-import bhmBackground from './img/bhm.png';
+import bhmBackground from './img/bhm_logo.svg';
 import Spinner from './components/Spinner'
 import PilatNarrowBlack from './fonts/PilatNarrow-Black.woff';
 import BEYNO from './fonts/BEYNO.woff';
@@ -33,8 +34,6 @@ export const StyledLogo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
-  min-width: 20em;
 `;
 
 function App() {
@@ -71,7 +70,9 @@ function App() {
 
   return (
     <>
-      <StyledLogo src={bhmBackground} alt="logo" />
+      <div className="logo">
+        <StyledLogo src={bhmBackground} alt="logo" />
+      </div>
       <GlobalStyle />
       <StyledApp>
         <Suspense fallback={<Spinner />}>

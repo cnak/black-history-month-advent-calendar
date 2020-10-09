@@ -28,7 +28,7 @@ const Hatch = ({
         {canOpen && (
           <div className={isOpen ? "back open" : "back"}>
             <Confetti active={isOpen} config={confettiConfig} />
-            <Popup fact={text} name={name} imageUrl={img} />
+            <Popup fact={text} name={name} imageUrl={img} frontColor={frontColor} />
           </div>
         )}
       </StyledHatch>
