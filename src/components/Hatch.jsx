@@ -13,9 +13,8 @@ const Hatch = ({
   },
   handleClick,
 }) => {
-    const modalRef = useRef();
+  const modalRef = useRef();
   const canOpen = new Date().getTime() >= new Date(adventDate).getTime();
-
 
   const handler = (id) => {
     handleClick(id)
