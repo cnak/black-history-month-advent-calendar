@@ -11,7 +11,9 @@ useImperativeHandle(
         ref,
         () => ({
             toggleModal() {
+                if (!isOpen) {
                  setIsOpen(!isOpen);
+                }
             }
         }),
     )
