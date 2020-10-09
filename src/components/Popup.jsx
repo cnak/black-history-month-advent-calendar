@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState, useImperativeHandle } from 'react';
 import "./modal.css";
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
-
-export default function Popup({fact, name, imageUrl, frontColor}) {
+const Popup = forwardRef((props, ref) => {
+    const { fact, name, imageUrl, frontColor} = props; 
   const [isOpen, setIsOpen] = useState(false);
+
+useImperativeHandle(
+        ref,
+        () => ({
+            toggleModal() {
+                 setIsOpen(!isOpen);
+            }
+        }),
+    )
 
   function toggleModal() {
     setIsOpen(!isOpen);
@@ -13,9 +22,6 @@ export default function Popup({fact, name, imageUrl, frontColor}) {
 
   return (
     <div className="modal-container">
-      <button className="learn-more-button" onClick={toggleModal}>
-        Learn More
-      </button>
       <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
@@ -35,4 +41,6 @@ export default function Popup({fact, name, imageUrl, frontColor}) {
       </Modal>
     </div>
   );
-}
+})
+
+export default Popup;
