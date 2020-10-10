@@ -25,30 +25,31 @@
   width: 100%;
   position: fixed;
   top: 0;
+  background-color: #292a2e;
+  border-radius: 2em;
   animation: fadeSplash ease 3s normal;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeSplash {
   0% {
-      z-index: 9999;
+    z-index: 9999;
     opacity: 1;
     display: block;
   }
-  
+
   25% {
     opacity: 1;
   }
   50% {
-      z-index: 9999;
+    z-index: 9999;
     opacity: 1;
   }
   75% {
-    opacity: .75;
-
+    opacity: 0.75;
   }
   88% {
-    opacity: .40;
+    opacity: 0.4;
   }
   100% {
     opacity: 0;
@@ -60,7 +61,19 @@
   }
   100% {
     opacity: 0;
-        display: none;
-        z-index: -999;
+    display: none;
+    z-index: -999;
+  }
+}
+
+@media only screen and (min-device-width: 481px) {
+  /* For portrait layouts only */
+  .splashscreen img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 79vh;
+    width: 50vh !important;
   }
 }

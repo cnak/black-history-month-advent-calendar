@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import splashscreen from '../img/splashscreen.jpg';
 
 export default function Splashscreen(props) {
-  const style = { width: '100%', height: '100vh' };
+  const style = { width: '100%' };
   if (!props.showSplascreen) {
     return (
       <div className="splashscreen">

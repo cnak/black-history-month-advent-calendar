@@ -8,6 +8,7 @@ import Spinner from './components/Spinner';
 import PilatNarrowBlack from './fonts/PilatNarrow-Black.woff';
 import BEYNO from './fonts/BEYNO.woff';
 import Splashscreen from './components/Splashscreen';
+import Footer from './components/FooterStyle';
 
 const Hatch = lazy(() => import('./components/Hatch'));
 const GlobalStyle = createGlobalStyle`
@@ -91,6 +92,7 @@ function App() {
           ))}
         </Suspense>
       </StyledApp>
+      <Footer />
     </>
   );
 }
