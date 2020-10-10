@@ -64,8 +64,10 @@ function App() {
   const handleFlipHatch = (id) => {
     // eslint-disable-next-line arrow-body-style
     const updatedHatches = hatches.map((hatch) => {
-        const shouldBeOpen = shouldOpen(hatch);
-      return hatch.id === id ? { ...hatch, isOpen: shouldBeOpen, hasBeenOpen: shouldBeOpen } : hatch;
+      const shouldBeOpen = shouldOpen(hatch);
+      return hatch.id === id
+        ? { ...hatch, isOpen: shouldBeOpen, hasBeenOpen: shouldBeOpen }
+        : hatch;
     });
     setHatches(updatedHatches);
   };
