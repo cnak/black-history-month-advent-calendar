@@ -9,6 +9,10 @@
   width: 50%;
 }
 
+.confetti {
+  z-index: -1;
+}
+
 .logo {
   margin: 3em;
 }

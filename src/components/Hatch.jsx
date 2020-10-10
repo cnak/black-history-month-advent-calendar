@@ -1,14 +1,8 @@
 /* eslint-disable react/prop-types */
-import React, {
-  lazy,
-  Suspense,
-  useRef,
-  forwardRef,
-  useImperativeHandle
-} from 'react';
+import React, { lazy, Suspense, useRef } from 'react';
+
 import Confetti from 'react-dom-confetti';
 import confettiConfig from './confetti';
-
 import Popup from './Popup';
 import Spinner from './Spinner';
 const StyledHatch = lazy(() => import('./HatchStyles'));
@@ -47,6 +41,9 @@ const Hatch = ({
         </div>
         {canOpen && (
           <div className={isOpen ? 'back open' : 'back'}>
+            <div className="confetti">
+              <Confetti active={isOpen} config={confettiConfig} />
+            </div>
             <Popup
               fact={text}
               name={name}
