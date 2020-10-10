@@ -1,3 +1,6 @@
+.confetti {
+  width: 100%;
+}
 .modal-container {
   display: flex;
   justify-content: center;
@@ -92,18 +95,38 @@
 }
 .ReactModalPortal {
   height: 100%;
-  /* transition: ease-out 500ms; */
+  transition: ease-out 500ms;
+  -webkit-transition: ease-out 500ms;
+  -webkit-transition: opacity ease-in 1000ms;
 }
 .ReactModal__Overlay {
   opacity: 0;
-  /* transition: opacity 500ms ease-in-out; */
+  transition: opacity 500ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {
   opacity: 1;
-  transition: opacity 500ms ease-in-out;
+  animation: fadeButton 1s;
 }
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
+}
+@keyframes fadeButton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  animation-timing-function: linear;
+}
+@-webkit-keyframes fadeButton {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  -webkit-animation-timing-function: linear;
 }
