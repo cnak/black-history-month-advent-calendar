@@ -1,13 +1,9 @@
-import React, {
-  forwardRef,
-  useState,
-  useImperativeHandle,
-  Suspense
-} from 'react';
-import Spinner from '../components/Spinner';
+import React, { forwardRef, useState, useImperativeHandle } from 'react';
 import './modal.css';
 import Modal from 'react-modal';
 import ProgressiveImage from 'react-progressive-graceful-image';
+import Confetti from 'react-dom-confetti';
+import confettiConfig from './confetti';
 
 Modal.setAppElement('#root');
 const Popup = forwardRef((props, ref) => {
@@ -19,9 +15,9 @@ const Popup = forwardRef((props, ref) => {
       if (!isOpen && hasBeenOpen === false) {
         setTimeout(() => {
           setIsOpen(!isOpen);
-        }, 900);
+        }, 1000);
       } else if (!isOpen && hasBeenOpen) {
-          setIsOpen(!isOpen);
+        setIsOpen(!isOpen);
       }
     }
   }));
@@ -40,13 +36,13 @@ const Popup = forwardRef((props, ref) => {
         overlayClassName="myoverlay"
         closeTimeoutMS={500}
       >
-        <a className={'modal-button'} onClick={toggleModal} />
+        <a href="#" className={'modal-button'} onClick={toggleModal}></a>
         <div
           className="modal-image"
           style={{ borderBottom: `solid 24px ${frontColor}` }}
         >
           <ProgressiveImage src={imageUrl} placeholder={imageUrl}>
-            {(imageUrl) => <img src={imageUrl} alt="an image" />}
+            {(imageUrl) => <img src={imageUrl} alt="" />}
           </ProgressiveImage>
         </div>
         <div className="modal-info">
