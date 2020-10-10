@@ -7,6 +7,7 @@ import bhmBackground from './img/bhm_logo.svg';
 import Spinner from './components/Spinner';
 import PilatNarrowBlack from './fonts/PilatNarrow-Black.woff';
 import BEYNO from './fonts/BEYNO.woff';
+import Splashscreen from './components/Splashscreen';
 
 const Hatch = lazy(() => import('./components/Hatch'));
 const GlobalStyle = createGlobalStyle`
@@ -38,12 +39,12 @@ export const StyledLogo = styled.img`
 
 function App() {
   const [hatches, setHatches] = useState([]);
+  const [showSplashScreen, setShowSplashScreen] = useState(true);
 
   useEffect(() => {
     const calendar = localStorage.calendar
       ? JSON.parse(localStorage.calendar)
       : createCalendar();
-
     setHatches(calendar);
   }, []);
 
@@ -74,6 +75,7 @@ function App() {
 
   return (
     <>
+      <Splashscreen showSplashScreen={showSplashScreen} />
       <div className="logo">
         <StyledLogo src={bhmBackground} alt="logo" />
       </div>

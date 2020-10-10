@@ -19,3 +19,48 @@
 .logo img {
   min-width: 10em;
 }
+
+.splashscreen {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  animation: fadeSplash ease 3s normal;
+  animation-fill-mode: forwards
+}
+
+@keyframes fadeSplash {
+  0% {
+      z-index: 9999;
+    opacity: 1;
+    display: block;
+  }
+  
+  25% {
+    opacity: 1;
+  }
+  50% {
+      z-index: 9999;
+    opacity: 1;
+  }
+  75% {
+    opacity: .75;
+
+  }
+  88% {
+    opacity: .40;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeSplash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+        display: none;
+        z-index: -999;
+  }
+}

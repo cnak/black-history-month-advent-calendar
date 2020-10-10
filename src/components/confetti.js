@@ -4,7 +4,7 @@ const confettiConfig = {
   startVelocity: 40,
   elementCount: 110,
   dragFriction: 0.12,
-  duration: 4000,
+  duration: 2000,
   stagger: 3,
   width: '10px',
   height: '10px',
