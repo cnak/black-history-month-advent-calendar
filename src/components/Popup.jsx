@@ -2,6 +2,7 @@ import React, { forwardRef, useState, useImperativeHandle, Suspense } from 'reac
 import Spinner from '../components/Spinner';
 import "./modal.css";
 import Modal from "react-modal";
+import ProgressiveImage from 'react-progressive-graceful-image';
 
 Modal.setAppElement("#root");
 const Popup = forwardRef((props, ref) => {
@@ -13,7 +14,9 @@ useImperativeHandle(
         () => ({
             toggleModal() {
                 if (!isOpen) {
-                 setIsOpen(!isOpen);
+                    setTimeout(() => {
+                        setIsOpen(!isOpen);
+                    }, 2000);
                 }
             }
         }),
@@ -33,9 +36,14 @@ useImperativeHandle(
         overlayClassName="myoverlay"
         closeTimeoutMS={500}
       >
-        <a className={"modal-button"} onClick={toggleModal} />
-        <div className="modal-image" style={{borderBottom: `solid 24px ${frontColor}`}}>
-               <img src={imageUrl} alt={name} />
+        <a className={'modal-button'} onClick={toggleModal} />
+        <div
+          className="modal-image"
+          style={{ borderBottom: `solid 24px ${frontColor}` }}
+        >
+          <ProgressiveImage src={imageUrl} placeholder={imageUrl}>
+            {(imageUrl) => <img src={imageUrl} alt="an image" />}
+          </ProgressiveImage>
         </div>
         <div className="modal-info">
           <div className="modal-name">{name}</div>
