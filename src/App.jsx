@@ -1,14 +1,14 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import StyledApp from './AppStyles';
-import './App.css'
+import './App.css';
 import { createCalendar } from './helpers';
 import bhmBackground from './img/bhm_logo.svg';
-import Spinner from './components/Spinner'
+import Spinner from './components/Spinner';
 import PilatNarrowBlack from './fonts/PilatNarrow-Black.woff';
 import BEYNO from './fonts/BEYNO.woff';
 
-const Hatch = lazy(() => import ('./components/Hatch'));
+const Hatch = lazy(() => import('./components/Hatch'));
 const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'BEYNO';
@@ -52,18 +52,20 @@ function App() {
     hatches.length && localStorage.setItem('calendar', JSON.stringify(hatches));
   }, [hatches]);
 
-  const shouldOpen = (hatch) => {        
-      const canOpen = new Date().getTime() >= new Date(hatch.adventDate).getTime();
-      if ((hatch.isOpen === false && canOpen) || (hatch.isOpen && canOpen)) { 
-        return true;
-      }
-      return false;
+  const shouldOpen = (hatch) => {
+    const canOpen =
+      new Date().getTime() >= new Date(hatch.adventDate).getTime();
+    if ((hatch.isOpen === false && canOpen) || (hatch.isOpen && canOpen)) {
+      return true;
+    }
+    return false;
   };
 
   const handleFlipHatch = (id) => {
     // eslint-disable-next-line arrow-body-style
     const updatedHatches = hatches.map((hatch) => {
-      return hatch.id === id ? { ...hatch, isOpen: shouldOpen(hatch) } : hatch;
+        const shouldBeOpen = shouldOpen(hatch);
+      return hatch.id === id ? { ...hatch, isOpen: shouldBeOpen, hasBeenOpen: shouldBeOpen } : hatch;
     });
     setHatches(updatedHatches);
   };
@@ -76,14 +78,14 @@ function App() {
       <GlobalStyle />
       <StyledApp>
         <Suspense fallback={<Spinner />}>
-        {hatches.map((hatch) => (
-          <Hatch
-            key={hatch.id}
-            hatchData={hatch}
-            handleClick={handleFlipHatch}
-          />
-        ))}
-          </Suspense>
+          {hatches.map((hatch) => (
+            <Hatch
+              key={hatch.id}
+              hatchData={hatch}
+              handleClick={handleFlipHatch}
+            />
+          ))}
+        </Suspense>
       </StyledApp>
     </>
   );

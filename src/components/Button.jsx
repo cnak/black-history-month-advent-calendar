@@ -17,6 +17,6 @@ const Button = styled.button`
     background-color: palevioletred;
     color: white;
   }
-`;;
+`;
 
 export default Button;

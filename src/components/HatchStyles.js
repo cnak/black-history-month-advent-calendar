@@ -27,6 +27,7 @@ const StyledHatch = styled.div`
     }
 
     &.open {
+      transform: rotateY(180deg);
     }
   }
   .back {
@@ -35,11 +36,13 @@ const StyledHatch = styled.div`
     top: 0px;
     left: 0px;
     z-index: 1;
+    transform: rotateY(180deg);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 
     &.open {
       z-index: 2;
+      transform: rotateY(0deg);
       backface-visibility: hidden;
     }
   }
@@ -51,6 +54,11 @@ const StyledHatch = styled.div`
     width: 100%;
     height: 100%;
     transition: all 0.5s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     border-radius: 4px;
     box-sizing: border-box;
   }

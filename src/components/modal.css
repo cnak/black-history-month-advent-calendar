@@ -1,8 +1,7 @@
-
 .modal-container {
-    display: flex;
-    justify-content: center;
-    height: 250px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
 }
 .mymodal {
   position: fixed;
@@ -17,36 +16,41 @@
 .modal-image {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(to right, #ebebeb calc(50% - 100px), #c5c5c5 50%, #ebebeb calc(50% + 100px));
-  background-size:0;
-  position:relative;
-  overflow:hidden;
+  background-image: linear-gradient(
+    to right,
+    #ebebeb calc(50% - 100px),
+    #c5c5c5 50%,
+    #ebebeb calc(50% + 100px)
+  );
+  background-size: 0;
+  position: relative;
+  overflow: hidden;
   border-bottom: solid 3px;
   transition: opacity 500ms ease-in-out;
 }
 
 .modal-image img {
-    width: 100%;
-    min-height: 50vh;
+  width: 100%;
+  min-height: 50vh;
 }
 
 .modal-info {
-    padding: 1.5em;
-    background-color: #fef8f0;
-    padding-top: 0.9em;
+  padding: 1.5em;
+  background-color: #fef8f0;
+  padding-top: 0.9em;
 }
 
 .modal-name {
-    font-family: 'BEYNO';
-    font-size: 2em;
-    text-transform: uppercase;
-    margin-top: .5em;
-    margin-bottom: .5em;
+  font-family: 'BEYNO';
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 .modal-fact {
-    font-family: 'roboto';
-    font-size: 1em;
-    line-height: 180%;
+  font-family: 'roboto';
+  font-size: 1em;
+  line-height: 180%;
 }
 
 .myoverlay {
@@ -71,7 +75,8 @@
 .modal-button:hover {
   opacity: 1;
 }
-.modal-button:before, .modal-button:after {
+.modal-button:before,
+.modal-button:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -86,12 +91,12 @@
   transform: rotate(-45deg);
 }
 .ReactModalPortal {
-    height: 100%;
-    transition: ease-out 500ms;
+  height: 100%;
+  /* transition: ease-out 500ms; */
 }
 .ReactModal__Overlay {
   opacity: 0;
-  transition: opacity 500ms ease-in-out;
+  /* transition: opacity 500ms ease-in-out; */
 }
 
 .ReactModal__Overlay--after-open {

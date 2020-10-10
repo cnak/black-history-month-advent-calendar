@@ -1,26 +1,30 @@
-import React, { forwardRef, useState, useImperativeHandle, Suspense } from 'react';
+import React, {
+  forwardRef,
+  useState,
+  useImperativeHandle,
+  Suspense
+} from 'react';
 import Spinner from '../components/Spinner';
-import "./modal.css";
-import Modal from "react-modal";
+import './modal.css';
+import Modal from 'react-modal';
 import ProgressiveImage from 'react-progressive-graceful-image';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 const Popup = forwardRef((props, ref) => {
-    const { fact, name, imageUrl, frontColor} = props; 
+  const { fact, name, imageUrl, frontColor, hasBeenOpen } = props;
   const [isOpen, setIsOpen] = useState(false);
 
-useImperativeHandle(
-        ref,
-        () => ({
-            toggleModal() {
-                if (!isOpen) {
-                    setTimeout(() => {
-                        setIsOpen(!isOpen);
-                    }, 2000);
-                }
-            }
-        }),
-    )
+  useImperativeHandle(ref, () => ({
+    toggleModal() {
+      if (!isOpen && hasBeenOpen === false) {
+        setTimeout(() => {
+          setIsOpen(!isOpen);
+        }, 900);
+      } else if (!isOpen && hasBeenOpen) {
+          setIsOpen(!isOpen);
+      }
+    }
+  }));
 
   function toggleModal() {
     setIsOpen(!isOpen);
@@ -52,6 +56,6 @@ useImperativeHandle(
       </Modal>
     </div>
   );
-})
+});
 
 export default Popup;
