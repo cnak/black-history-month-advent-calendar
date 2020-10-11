@@ -33,7 +33,7 @@ Mr. Cameron 's role, which he co stared with Susan Shaw, was  at a time when Bla
     id: 'hatch-3',
     nr: 3,
     name: 'Arthur Wharton',
-    img: require('./img/profiles/06_George_Arthur_Roberts.jpg'),
+    img: require('./img/profiles/Arthur_Wharton.jpg'),
     text: `"Arthur Wharton is widely considered to be the first black professional footballer in the world.
 
 Wharton was born in Jamestown, Gold Coast (now Accra, Ghana). His father Henry Wharton was Grenadian, while his mother, Annie Florence Egyriba was a member of the Fante Ghanaian royalty. Wharton moved to England in 1882 at age 19, to train as a Methodist missionary, but soon abandoned this in favour of becoming a full-time athlete.

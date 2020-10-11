@@ -5,6 +5,8 @@ import Confetti from 'react-dom-confetti';
 import confettiConfig from './confetti';
 import Popup from './Popup';
 import Spinner from './Spinner';
+import { useAlert } from 'react-alert';
+
 const StyledHatch = lazy(() => import('./HatchStyles'));
 
 const Hatch = ({
@@ -23,8 +25,12 @@ const Hatch = ({
 }) => {
   const modalRef = useRef();
   const canOpen = new Date().getTime() >= new Date(adventDate).getTime();
+  const alert = useAlert();
   const handler = (id) => {
     handleClick(id);
+    if (!canOpen) {
+        alert.show('Wait for the date')
+    }
     if (modalRef.current) {
         modalRef.current.toggleModal();
     }
