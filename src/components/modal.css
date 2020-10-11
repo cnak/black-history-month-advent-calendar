@@ -33,7 +33,7 @@
 }
 
 .modal-image img {
-  width: 100%;
+  /* width: 100%; */
   min-height: 50vh;
   max-width: 66vh;
 }

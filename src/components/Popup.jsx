@@ -2,8 +2,6 @@ import React, { forwardRef, useState, useImperativeHandle } from 'react';
 import './modal.css';
 import Modal from 'react-modal';
 import ProgressiveImage from 'react-progressive-graceful-image';
-import Confetti from 'react-dom-confetti';
-import confettiConfig from './confetti';
 
 Modal.setAppElement('#root');
 const Popup = forwardRef((props, ref) => {
