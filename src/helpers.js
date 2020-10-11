@@ -164,7 +164,7 @@ Jemison left NASA in 1993 and founded a technology research company. She later f
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 10),
     frontColor: '#E55F13'
   },
   {
@@ -180,7 +180,7 @@ In March 1931 he became one of the founders of the League of Coloured Peoples. I
 `,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 11),
     frontColor: '#647D1C'
   },
   {
@@ -197,7 +197,7 @@ In 1941, she was hired by the BBC Empire Service to work on the programme Callin
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 12),
     frontColor: '#E8AA24'
   },
   {
@@ -213,7 +213,7 @@ He went on to patent several inventions, including an improved sewing machine an
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 13),
     frontColor: '#E55F13'
   },
   {
@@ -227,7 +227,7 @@ In 1927, Bader and her two brothers were orphaned when their father died. At the
 In 1939, at the onset of the Second World War, Bader enlisted in the Navy, Army and Air Force Institutes (NAAFI) at Catterick Camp, Yorkshire. She was dismissed after seven weeks when it was discovered that her father was not born in the United Kingdom. On 28 March 1941 she enlisted in the Women's Auxiliary Air Force (WAAF), after she heard that the Royal Air Force (RAF) were taking citizens of West Indian descent. She trained in instrument repair, which was a trade newly opened to women. She then became a Leading Aircraft Woman and was eventually promoted to the rank of corporal."`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 14),
     frontColor: '#647D1C'
   },
   {
@@ -242,7 +242,7 @@ Desmond Mpilo Tutu OMSG CH GCStJ is a South African Anglican cleric, theologian,
 In his position as archbishop he emerged as one of the most prominent and eloquent voices in the South African anti-apartheid movement, especially important considering that many of the movement's prominent leaders were imprisoned or in exile.`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 15),
     frontColor: '#E8AA24'
   },
   {
@@ -256,7 +256,7 @@ In 2019, Tessy became the very first British National to be honoured with The Pr
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 16),
     frontColor: '#E55F13'
   },
   {
@@ -270,7 +270,7 @@ Richmond became a professional boxer, soon to acquire that famous nickname thank
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 17),
     frontColor: '#647D1C'
   },
   {
@@ -284,7 +284,7 @@ Besides dealing with many domestic cases, she worked to stop probation officers 
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 18),
     frontColor: '#E8AA24'
   },
   {
@@ -298,7 +298,7 @@ Famous quote '“The real objective must always be the good life for all the peo
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 19),
     frontColor: '#E55F13'
   },
   {
@@ -314,7 +314,7 @@ She founded Kew Gardens and also claimed to have inspired Mozart in his music, H
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 20),
     frontColor: '#647D1C'
   },
   {
@@ -330,7 +330,7 @@ After he retired from athletics, he became an entertainer, playing piano in the 
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 21),
     frontColor: '#E8AA24'
   },
   {
@@ -347,7 +347,7 @@ When she died, Edward never really recovered, and she was much mourned by him an
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 22),
     frontColor: '#E55F13'
   },
   {
@@ -360,7 +360,7 @@ Dame Linda Penelope Dobbs was born in 1951. Dame Linda came to Britain from Sier
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 23),
     frontColor: '#647D1C'
   },
   {
@@ -374,7 +374,7 @@ He made his directorial debut with She's Gotta Have It (1986). He has since writ
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 24),
     frontColor: '#E8AA24'
   },
   {
@@ -388,7 +388,7 @@ It was during her time in slavery that she learned to read and write, penning he
 At the age of 20, she moved to England with her son and published her first volume of poetry in 1773, making her the first Black poet to be published, ever."`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 25),
     frontColor: '#E55F13'
   },
   {
@@ -403,7 +403,7 @@ Otis Boykin filed a patent for resuscitators and paved the way for his most nota
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 26),
     frontColor: '#647D1C'
   },
   {
@@ -418,7 +418,7 @@ Edmonstone is regarded as one of the ""100 Great Black Britons"". However, Darwi
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 27),
     frontColor: '#E8AA24'
   },
   {
@@ -433,7 +433,7 @@ Paul Stephenson OBE is a community worker, activist and long-time campaigner for
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 28),
     frontColor: '#E55F13'
   },
   {
@@ -448,7 +448,7 @@ Since the late 20th century, when his autobiography was published in a new editi
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 29),
     frontColor: '#647D1C'
   },
   {
@@ -463,7 +463,7 @@ He was married twice, once to an Englishwoman, once to a Swedish woman, and had 
 "`,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 30),
     frontColor: '#E8AA24'
   },
   {
@@ -474,7 +474,7 @@ He was married twice, once to an Englishwoman, once to a Swedish woman, and had 
     text: `1983 - The first Black person to headline Glastonbury was Curtis Mayfield, an American singer-songwriter, guitarist, and record producer, and one of the most influential musicians behind soul and politically conscious African-American music. Mayfield’s individualism on the guitar later put him in Rolling Stone Magazine’s 100 Top Guitarists of All Time and admiration from such guitar giants as Jimi Hendrix and Eric Clapton. In the mid-1960s Mayfield wrote three songs that defined his songwriter vision in this era: “Keep on Pushing,” “People Get Ready” and “We’re A Winner.” All managed – along with several other Mayfield songs - to insinuate social commentary into the pop charts and bring awareness to the struggles going on. No wonder Martin Luther King Jr. loved Mayfield’s work. The civil rights icon embraced “Ready” and “Pushing” as unofficial anthems for the Movement. “Keep On Pushing” was the theme music, part of the experience on the Freedom Ride buses that took activists into an unfriendly American South in the fight against segregation. The album “Keep On Pushing” by The Impressions (Curtis Mayfield's group at the time) was released in 1964 and quickly became the group’s biggest album to date. It also secured a longevity outside of its initial success, such as, when then-State Senator Barack Obama gave the Keynote Speech at the 2004 Democratic Convention. The music that brought him onstage was “Keep On Pushing.” `,
     isOpen: false,
     hasBeenOpen: false,
-    adventDate: new Date(2020, 9, 9),
+    adventDate: new Date(2020, 9, 31),
     frontColor: '#E55F13'
   }
 ];

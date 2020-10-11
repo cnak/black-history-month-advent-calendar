@@ -25,7 +25,9 @@ const Hatch = ({
   const canOpen = new Date().getTime() >= new Date(adventDate).getTime();
   const handler = (id) => {
     handleClick(id);
-    modalRef.current.toggleModal();
+    if (modalRef.current) {
+        modalRef.current.toggleModal();
+    }
   };
 
   return (
@@ -33,7 +35,7 @@ const Hatch = ({
       <StyledHatch
         frontColor={frontColor}
         hatchBackdrop={img}
-        onClick={() => handler(id)}
+        onClick={() => handler(id, hasBeenOpen)}
       >
         <div className={isOpen ? 'front open' : 'front'}>
           <p>{nr}</p>

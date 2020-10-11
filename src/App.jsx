@@ -34,7 +34,7 @@ function App() {
   const shouldOpen = (hatch) => {
     const canOpen =
       new Date().getTime() >= new Date(hatch.adventDate).getTime();
-    if ((hatch.isOpen === false && canOpen) || (hatch.isOpen && canOpen)) {
+    if ((canOpen && hatch.isOpen === false) || (hatch.isOpen && canOpen)) {
       return true;
     }
     return false;
@@ -43,10 +43,12 @@ function App() {
   const handleFlipHatch = (id) => {
     // eslint-disable-next-line arrow-body-style
     const updatedHatches = hatches.map((hatch) => {
+      if (hatch.id === id) {
       const shouldBeOpen = shouldOpen(hatch);
-      return hatch.id === id
-        ? { ...hatch, isOpen: shouldBeOpen, hasBeenOpen: shouldBeOpen }
-        : hatch;
+        return { ...hatch, isOpen: shouldBeOpen, hasBeenOpen: shouldBeOpen }
+      } else {
+          return hatch;
+    }
     });
     setHatches(updatedHatches);
   };

@@ -27,8 +27,15 @@
   top: 0;
   background-color: #292a2e;
   border-radius: 2em;
-  animation: fadeSplash ease 3s normal;
+  animation: fadeSplash ease 2s normal;
   animation-fill-mode: forwards;
+
+  margin: auto;
+  /* position: absolute; */
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 @keyframes fadeSplash {
