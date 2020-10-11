@@ -1,11 +1,4 @@
 // eslint-disable-next-line no-unused-vars
-const shuffle = (a) => {
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-};
 
 export const hatchArray = [
   {
@@ -479,4 +472,4 @@ He was married twice, once to an Englishwoman, once to a Swedish woman, and had 
   }
 ];
 
-export const createCalendar = () => shuffle(hatchArray);
+export const createCalendar = () => hatchArray;
