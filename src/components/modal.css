@@ -47,6 +47,7 @@
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
 .modal-fact {
   font-family: 'roboto';
   font-size: 1em;
@@ -73,6 +74,7 @@
   height: 32px;
   border-radius: 19px;
   z-index: 1000;
+  background: #00000017;
 }
 .modal-button:hover {
   opacity: 1;
@@ -95,7 +97,6 @@
 .ReactModalPortal {
   height: 100%;
   transition: ease-out 500ms;
-  -webkit-transition: ease-out 500ms;
   -webkit-transition: opacity ease-in 1000ms;
 }
 .ReactModal__Overlay {
@@ -105,7 +106,7 @@
 
 .ReactModal__Overlay--after-open {
   opacity: 1;
-  animation: fade 1s;
+  /* animation: fade 1s; */
 }
 
 .ReactModal__Overlay--before-close {
@@ -114,6 +115,15 @@
 @keyframes fade {
   0% {
     opacity: 0;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
   }
   100% {
     opacity: 1;
@@ -132,7 +142,7 @@
 
 @media only screen and (min-device-width: 481px) {
   .ReactModal__Overlay {
-    width: 60vh;
+    width: 60vw;
     height: 80vh;
     display: block;
     margin-left: auto;

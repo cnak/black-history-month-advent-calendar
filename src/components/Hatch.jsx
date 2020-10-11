@@ -39,7 +39,7 @@ const Hatch = ({
           <p>{nr}</p>
         </div>
         {canOpen && (
-          <div className={isOpen ? 'back open' : 'back'}>
+          <div className={isOpen ? 'back open' : 'back'} style={{backgroundColor: frontColor}}>
             <div className="confetti">
               <Confetti active={isOpen} config={confettiConfig} />
             </div>

@@ -17,10 +17,6 @@ const GlobalStyle = createGlobalStyle`
         font-style: normal;
         font-display: swap;
     }
-  body {
-    background-color: #1E1E1;
-    margin: 0;
-  }
 `;
 
 export default GlobalStyle;

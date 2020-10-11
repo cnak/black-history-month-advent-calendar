@@ -235,7 +235,11 @@ In 1939, at the onset of the Second World War, Bader enlisted in the Navy, Army 
     nr: 15,
     img: require('./img/profiles/02_Desmond_tutu.jpg'),
     name: 'Desmond Tutu',
-    text: ``,
+    text: `The Archbishop Desmond Tutu was the first black person to be appointed the Anglican dean of Johannesburg in 1975.
+
+Desmond Mpilo Tutu OMSG CH GCStJ is a South African Anglican cleric, theologian, and 1984 Nobel Peace Prize laureate, known for his work as an anti-apartheid and human rights activist. He was the Bishop of Johannesburg from 1985 to 1986 and then the Archbishop of Cape Town from 1986 to 1996, in both cases being the first black African to hold the position. Theologically, he sought to fuse ideas from black theology with African theology.
+
+In his position as archbishop he emerged as one of the most prominent and eloquent voices in the South African anti-apartheid movement, especially important considering that many of the movement's prominent leaders were imprisoned or in exile.`,
     isOpen: false,
     hasBeenOpen: false,
     adventDate: new Date(2020, 9, 9),
