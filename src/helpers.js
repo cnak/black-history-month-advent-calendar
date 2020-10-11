@@ -138,7 +138,7 @@ After the Civil War ended, Tubman dedicated her life to helping impoverished for
   {
     id: 'hatch-9',
     nr: 9,
-    img: require('./img/profiles/16_Federick Jones.jpg'),
+    img: require('./img/profiles/16_Federick_Jones.jpg'),
     name: 'Federick Jones',
     text: `"Frederick McKinley Jones was the inventor of a practical refrigeration system for trucks and railroad cars. 
 Frederick Jones patented more than sixty inventions in all, but it is his invention of the automatic refrigeration system for long-haul trucks in 1935 that he is most famous for.
@@ -420,7 +420,7 @@ Edmonstone is regarded as one of the ""100 Great Black Britons"". However, Darwi
   {
     id: 'hatch-28',
     nr: 28,
-    img: require('./img/profiles/23_Paul Stephenson.jpg'),
+    img: require('./img/profiles/23_Paul_Stephenson.jpg'),
     name: 'Paul Stephenson',
     text: `"
 Paul Stephenson was the first black social worker. 
@@ -450,7 +450,7 @@ Since the late 20th century, when his autobiography was published in a new editi
   {
     id: 'hatch-30',
     nr: 30,
-    img: require('./img/profiles/18_Ira Frederick Aldridge.jpg'),
+    img: require('./img/profiles/18_Ira_Frederick_Aldridge.jpg'),
     name: 'Ira Frederick Aldridge',
     text: `"Ira Frederick Aldridge was the first black actor to play Othello on a West End stage. 
 Aldridge was an American and later British stage actor and playwright who made his career after 1824 largely on the London stage and in Europe, especially in Shakespearean roles. 
@@ -465,7 +465,7 @@ He was married twice, once to an Englishwoman, once to a Swedish woman, and had 
   {
     id: 'hatch-31',
     nr: 31,
-    img: require('./img/profiles/27_Curtis Mayfield.jpg'),
+    img: require('./img/profiles/27_Curtis_Mayfield.jpg'),
     name: 'Curtis Mayfield',
     text: `1983 - The first Black person to headline Glastonbury was Curtis Mayfield, an American singer-songwriter, guitarist, and record producer, and one of the most influential musicians behind soul and politically conscious African-American music. Mayfield’s individualism on the guitar later put him in Rolling Stone Magazine’s 100 Top Guitarists of All Time and admiration from such guitar giants as Jimi Hendrix and Eric Clapton. In the mid-1960s Mayfield wrote three songs that defined his songwriter vision in this era: “Keep on Pushing,” “People Get Ready” and “We’re A Winner.” All managed – along with several other Mayfield songs - to insinuate social commentary into the pop charts and bring awareness to the struggles going on. No wonder Martin Luther King Jr. loved Mayfield’s work. The civil rights icon embraced “Ready” and “Pushing” as unofficial anthems for the Movement. “Keep On Pushing” was the theme music, part of the experience on the Freedom Ride buses that took activists into an unfriendly American South in the fight against segregation. The album “Keep On Pushing” by The Impressions (Curtis Mayfield's group at the time) was released in 1964 and quickly became the group’s biggest album to date. It also secured a longevity outside of its initial success, such as, when then-State Senator Barack Obama gave the Keynote Speech at the 2004 Democratic Convention. The music that brought him onstage was “Keep On Pushing.” `,
     isOpen: false,

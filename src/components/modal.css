@@ -13,30 +13,25 @@
   border-radius: 4px;
   outline: none;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .modal-image {
   position: relative;
   height: 50vh;
-  max-width: 100vh;
+  max-width: 100vw;
   background-color: #292a2e;
-  background-image: linear-gradient(
-    to right,
-    #ebebeb calc(50% - 100px),
-    #c5c5c5 50%,
-    #ebebeb calc(50% + 100px)
-  );
   background-size: 0;
   overflow: hidden;
   border-bottom: solid 3px;
   transition: opacity 500ms ease-in-out;
+  width: 100vw;
 }
 
 .modal-image img {
   width: 100%;
   min-height: 50vh;
-  max-width: 66vh;
+  max-width: 100vw;
 }
 
 .modal-info {
@@ -56,6 +51,8 @@
   font-family: 'roboto';
   font-size: 1em;
   line-height: 180%;
+  transition: opacity 500ms ease-in-out;
+  width: 100%;
 }
 
 .myoverlay {
@@ -144,15 +141,15 @@
   }
   .mymodal {
     height: 80vh;
-    width: 60vh;
+    width: 60vw;
   }
   .modal-image {
     min-height: 40vh;
-    width: 60vh;
+    width: 60vw;
   }
   .modal-image img {
     width: 100%;
     min-height: 50vh;
-    max-width: 100vh;
+    max-width: 100vw;
   }
 }

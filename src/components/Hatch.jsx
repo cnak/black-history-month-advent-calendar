@@ -23,7 +23,6 @@ const Hatch = ({
 }) => {
   const modalRef = useRef();
   const canOpen = new Date().getTime() >= new Date(adventDate).getTime();
-
   const handler = (id) => {
     handleClick(id);
     modalRef.current.toggleModal();
