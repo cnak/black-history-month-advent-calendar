@@ -1,11 +1,1 @@
-<svg width="331" height="281" viewBox="0 0 331 281" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="283.043" y="218.31" width="25.8032" height="476.517" transform="rotate(42.8456 283.043 218.31)" fill="#E8AA24"/>
-<rect x="219.081" y="25.4717" width="25.8032" height="334.877" transform="rotate(42.8456 219.081 25.4717)" fill="#647D1C"/>
-<rect x="302.725" y="122.31" width="25.8032" height="334.877" transform="rotate(42.8456 302.725 122.31)" fill="#647D1C"/>
-<rect x="51.7246" y="94.3101" width="25.8032" height="334.877" transform="rotate(42.8456 51.7246 94.3101)" fill="#E55F13"/>
-<rect x="132.725" y="155.31" width="27.2774" height="334.877" transform="rotate(42.8456 132.725 155.31)" fill="#E55F13"/>
-<rect x="237.725" y="155.31" width="25.8032" height="334.877" transform="rotate(42.8456 237.725 155.31)" fill="#E55F13"/>
-<rect x="47.1136" y="173.668" width="25.8032" height="476.517" transform="rotate(42.8456 47.1136 173.668)" fill="#E8AA24"/>
-<rect x="175.725" y="184.31" width="25.8032" height="334.877" transform="rotate(42.8456 175.725 184.31)" fill="#647D1C"/>
-<rect x="312.043" y="0.310059" width="25.8032" height="476.517" transform="rotate(42.8456 312.043 0.310059)" fill="#E8AA24"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="331" height="281" fill="none" viewBox="0 0 331 281"><rect width="25.803" height="476.517" x="283.043" y="218.31" fill="#E8AA24" transform="rotate(42.8456 283.043 218.31)"/><rect width="25.803" height="334.877" x="219.081" y="25.472" fill="#647D1C" transform="rotate(42.8456 219.081 25.4717)"/><rect width="25.803" height="334.877" x="302.725" y="122.31" fill="#647D1C" transform="rotate(42.8456 302.725 122.31)"/><rect width="25.803" height="334.877" x="51.725" y="94.31" fill="#E55F13" transform="rotate(42.8456 51.7246 94.3101)"/><rect width="27.277" height="334.877" x="132.725" y="155.31" fill="#E55F13" transform="rotate(42.8456 132.725 155.31)"/><rect width="25.803" height="334.877" x="237.725" y="155.31" fill="#E55F13" transform="rotate(42.8456 237.725 155.31)"/><rect width="25.803" height="476.517" x="47.114" y="173.668" fill="#E8AA24" transform="rotate(42.8456 47.1136 173.668)"/><rect width="25.803" height="334.877" x="175.725" y="184.31" fill="#647D1C" transform="rotate(42.8456 175.725 184.31)"/><rect width="25.803" height="476.517" x="312.043" y=".31" fill="#E8AA24" transform="rotate(42.8456 312.043 0.310059)"/></svg>
