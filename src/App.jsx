@@ -1,42 +1,20 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import GlobalStyle from './components/GlobalStyle'
 import StyledApp from './AppStyles';
 import './App.css';
 import { createCalendar } from './helpers';
 import bhmBackground from './img/bhm_logo.svg';
 import Spinner from './components/Spinner';
-import PilatNarrowBlack from './fonts/PilatNarrow-Black.woff';
-import BEYNO from './fonts/BEYNO.woff';
 import Splashscreen from './components/Splashscreen';
+import StyledLogo from './components/StyledLogo'
 import Footer from './components/FooterStyle';
+import ReactGA from 'react-ga';
+import config from './config.json';
 
 const Hatch = lazy(() => import('./components/Hatch'));
-const GlobalStyle = createGlobalStyle`
-@font-face {
-    font-family: 'BEYNO';
-    src: url(${BEYNO}) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-    @font-face {
-        font-family: 'Pilat Narrow';
-        src: url(${PilatNarrowBlack}) format('woff');
-        font-weight: 900;
-        font-style: normal;
-        font-display: swap;
-    }
-  body {
-    background-color: #1E1E1;
-    margin: 0;
-  }
-`;
 
-export const StyledLogo = styled.img`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-`;
+ReactGA.initialize(config.googleAnalytics.trackingCode);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   const [hatches, setHatches] = useState([]);
@@ -49,7 +27,6 @@ function App() {
     setHatches(calendar);
   }, []);
 
-  // Store calendar in localStorage
   useEffect(() => {
     hatches.length && localStorage.setItem('calendar', JSON.stringify(hatches));
   }, [hatches]);

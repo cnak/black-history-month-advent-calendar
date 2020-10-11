@@ -405,7 +405,7 @@ Otis Boykin filed a patent for resuscitators and paved the way for his most nota
   {
     id: 'hatch-27',
     nr: 27,
-    img: require('./img/profiles/20_John Edmonstone.jpg'),
+    img: require('./img/profiles/20_John_Edmonstone.jpg'),
     name: 'John Edmonstone',
     text: `"John Edmonstone was a ex slave who gave Charles Darwin inspiring accounts of tropical rain forests in South America and may have encouraged him to explore there. The taxidermy Darwin learnt from Edmonstone helped him greatly during the voyage of HMS Beagle.
 Born  in Demerara, British Guiana (present day Guyana, South America), who later gained his freedom. He learned taxidermy from Charles Waterton, whose father-in-law Charles Edmonstone had a plantation in Demerara.

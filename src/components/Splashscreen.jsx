@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import splashscreen from '../img/splashscreen.jpg';
 
 export default function Splashscreen(props) {
@@ -6,7 +6,7 @@ export default function Splashscreen(props) {
   if (!props.showSplascreen) {
     return (
       <div className="splashscreen">
-        <img src={splashscreen} style={style} />
+        <img src={splashscreen} style={style} alt="" />
       </div>
     );
   } else {

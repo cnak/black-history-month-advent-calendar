@@ -2,6 +2,7 @@ import React, { forwardRef, useState, useImperativeHandle } from 'react';
 import './modal.css';
 import Modal from 'react-modal';
 import ProgressiveImage from 'react-progressive-graceful-image';
+import loadingImage from '../img/loading_iamge.jpg'
 
 Modal.setAppElement('#root');
 const Popup = forwardRef((props, ref) => {
@@ -39,7 +40,7 @@ const Popup = forwardRef((props, ref) => {
           className="modal-image"
           style={{ borderBottom: `solid 24px ${frontColor}` }}
         >
-          <ProgressiveImage src={imageUrl} placeholder={imageUrl}>
+          <ProgressiveImage src={imageUrl} placeholder={loadingImage}>
             {(imageUrl) => <img src={imageUrl} alt="" />}
           </ProgressiveImage>
         </div>
