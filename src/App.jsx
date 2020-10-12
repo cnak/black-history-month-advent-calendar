@@ -14,7 +14,7 @@ import config from './config.json';
 const Hatch = lazy(() => import('./components/Hatch'));
 
 ReactGA.initialize(config.googleAnalytics.trackingCode);
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.pageview(window.location.pathname);
 
 function App() {
   const [hatches, setHatches] = useState([]);
