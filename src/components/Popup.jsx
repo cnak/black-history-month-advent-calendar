@@ -2,7 +2,7 @@ import React, { forwardRef, useState, useImperativeHandle } from 'react';
 import './modal.css';
 import Modal from 'react-modal';
 import ProgressiveImage from 'react-progressive-graceful-image';
-import loadingImage from '../img/loading_iamge.jpg'
+import loadingImage from '../img/loading_iamge.jpg';
 
 Modal.setAppElement('#root');
 const Popup = forwardRef((props, ref) => {

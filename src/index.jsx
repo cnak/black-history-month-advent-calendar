@@ -11,7 +11,7 @@ const options = {
   timeout: 1400,
   offset: '30px',
   transition: transitions.FADE
-}
+};
 
 const Root = () => (
   <AlertProvider template={AlertTemplate} {...options}>

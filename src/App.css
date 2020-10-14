@@ -13,6 +13,11 @@
   z-index: -1;
 }
 
+.engine-logo img {
+  max-width: 30%;
+  border: solid 1px green
+}
+
 .logo {
   margin: 3em;
 }
@@ -31,8 +36,7 @@
   animation-fill-mode: forwards;
 
   margin: auto;
-  /* position: absolute; */
-  left:0;
+  left: 0;
   right: 0;
   top: 0;
   bottom: 0;
@@ -60,6 +64,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -999;
   }
 }
 @-webkit-keyframes fadeSplash {
@@ -82,5 +87,17 @@
     width: 50%;
     height: 79vh;
     width: 50vh !important;
+  }
+
+  .engine-logo img {
+    width: 7rem;
+  }
+  .engine-logo {
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    bottom: 6rem;
+    height: 1em;
+    width: 100%;
   }
 }

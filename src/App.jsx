@@ -1,12 +1,13 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-import GlobalStyle from './components/GlobalStyle'
+import GlobalStyle from './components/GlobalStyle';
 import StyledApp from './AppStyles';
 import './App.css';
 import { createCalendar } from './helpers';
 import bhmBackground from './img/bhm_logo.svg';
+import engineLogo from './img/engine_logo.svg';
 import Spinner from './components/Spinner';
 import Splashscreen from './components/Splashscreen';
-import StyledLogo from './components/StyledLogo'
+import StyledLogo from './components/StyledLogo';
 import Footer from './components/FooterStyle';
 import ReactGA from 'react-ga';
 import config from './config.json';
@@ -44,11 +45,11 @@ function App() {
     // eslint-disable-next-line arrow-body-style
     const updatedHatches = hatches.map((hatch) => {
       if (hatch.id === id) {
-      const shouldBeOpen = shouldOpen(hatch);
-        return { ...hatch, isOpen: shouldBeOpen, hasBeenOpen: shouldBeOpen }
+        const shouldBeOpen = shouldOpen(hatch);
+        return { ...hatch, isOpen: shouldBeOpen, hasBeenOpen: shouldBeOpen };
       } else {
-          return hatch;
-    }
+        return hatch;
+      }
     });
     setHatches(updatedHatches);
   };
@@ -71,6 +72,10 @@ function App() {
           ))}
         </Suspense>
       </StyledApp>
+      <div className="gap" />
+      <div className="engine-logo">
+        <StyledLogo src={engineLogo} alt="engineLogo" />
+      </div>
       <Footer />
     </>
   );

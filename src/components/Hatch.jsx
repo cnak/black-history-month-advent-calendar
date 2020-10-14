@@ -29,10 +29,10 @@ const Hatch = ({
   const handler = (id) => {
     handleClick(id);
     if (!canOpen) {
-        alert.show('Wait for the date')
+      alert.show('Wait for the date');
     }
     if (modalRef.current) {
-        modalRef.current.toggleModal();
+      modalRef.current.toggleModal();
     }
   };
 
@@ -47,7 +47,10 @@ const Hatch = ({
           <p>{nr}</p>
         </div>
         {canOpen && (
-          <div className={isOpen ? 'back open' : 'back'} style={{backgroundColor: frontColor}}>
+          <div
+            className={isOpen ? 'back open' : 'back'}
+            style={{ backgroundColor: frontColor }}
+          >
             <div className="confetti">
               <Confetti active={isOpen} config={confettiConfig} />
             </div>
